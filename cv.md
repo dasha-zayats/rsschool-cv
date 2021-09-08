@@ -27,4 +27,5 @@
     - #### I try to learn the language for 30 minutes every day. And I hope to get level B1.
 
 + ### My contacts:
+    - ####  telephone number: +375(44)5697071
     - #### mail: dasha_semchenko@mail.ru
