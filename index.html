@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CV: DASHA-ZAYATS</title>
   <link rel="stylesheet" href="style.css">
 </head>
@@ -10,71 +11,73 @@
     <header>
       <img id="photo" src="photo.jpg" alt="my photo" >
       <div id="name">
-        <h1>DASHA ZAYATS</h1>
-        <h2>FUTURE FRONT-END DEVELOPER</h2>
+        <h1>DASHA <wbr>ZAYATS</h1>
+        <h2>FUTURE <wbr>FRONT-END <wbr>DEVELOPER</h2>
       </div>    
     </header>
     <div id="navigation">
       <div class="section"><a href="#about-me">About me</a></div>
       <div class="section"><a href="#skills">Skills</a></div>
-      <div class="section"><a href="#code-example">Code example</a></div>
+      <div class="section"><a href="#example">Code example</a></div>
       <div class="section"><a href="#languages">Languages</a></div>
       <div class="section"><a href="#contacts">Contacts</a></div>
     </div>
 
     <div class="categorie">
-      <h1><a name="about-me">About me</a></h1>
-      <h2>I am 23 years old.<br> I have no experience as a programmer, but I really want to be a front-end developer!</h2>  
+      <div class="caption"><a name="about-me">About me</a></div>
+      <div class="text">I am 23 years old.<br> I have no experience as a programmer, but I really want to be a front-end developer!</div>  
     </div>
 
 
     <div class="categorie" id="skills">
-      <h1><a name="skills">My skeels</a></h1>
+      <div class="caption"><a name="skills">My skeels</a></div>
       <div class="block">
         <div class="line"></div>
-        <h2>I study JavaScript, HTML, CSS articles on <a href="https://learn.javascript.ru/" target=_blank >Modern JavaScript Tutorial</a>. 
+        <div class="text">I study JavaScript, HTML, CSS articles on <a href="https://learn.javascript.ru/" target=_blank >Modern JavaScript Tutorial</a>. 
             And I also study articles on <a href="https://developer.mozilla.org/ru/" target=_blank >Resources for developers</a>.
-        </h2>
+        </div>
       </div>
       <div class="block">
         <div class="line"></div>
-        <h2>I also got practical experience, when I solved tasks on <a href="https://learn.javascript.ru/" target=_blank >Modern JavaScript Tutorial</a>.</h2>
+        <div class="text">I also got practical experience, when I solved tasks on <a href="https://learn.javascript.ru/" target=_blank >Modern JavaScript Tutorial</a>.</div>
       </div>  
     </div>
 
 
     <div class="categorie">
-      <h1><a name="#code-example">Code example</a></h1>
+      <div class="caption"><a name="example">Code example</a></div>
         <code>
            let vasya = { name: "Vasya", age: 25 };<br>
            let petya = { name: "Petya", age: 30 };<br>
            let masha = { name: "Masha", age: 28 };<br>
            <br>
-           let arrayOfUsers = [ vasya, petya, masha ];<br>  
+           let users = [ vasya, petya, masha ];<br>  
            <br>  
          function sortByAge(arr) {<br>  
              arr.sort((a, b) => a.age > b.age ? 1 : -1);<br>  
            }<br>  
            <br>  
-           sortByAge(arrayOfUsers);<br> 
+           sortByAge(users);<br> 
         </code>   
     </div>
 
-    <div class="categorie">
-      <h1><a name="languages">Languages</a></h1>
-      <h2>My english level is A2.<br>
+    <div class = "categorie">
+      <div class = "caption"><a name = "languages">Languages</a></div>
+      <div class = "text">My english level is A2.<br>
       I try to learn the language for 30 minutes every day. And I hope to get level B1.
-      </h2>  
+      </div>  
     </div>
 
     <footer>
-      <div id="contacts">
-      <h1 style="margin-top: 0px"><a name="contacts">Contacts</a></h1>
-      <div class="contact" id="telephone">+375(44)5697071</div>  
-      <div class="contact" id="mail">dasha_semchenko@mail.ru</div> 
-      <div class="contact" id="git-hub"><img src="pngwing.com.png" alt="GitHub" width="40" style="vertical-align: bottom;"><a href="https://github.com/dasha-zayats" target=_blank >Me on GitHub</a></div>
-      <div class="contact" id="rs-school"><a href="https://rs.school/js/" target="_blank"><img src="rs_school_js.svg" alt="RS-School" width="150"></a></div>
-      <h2 style="text-align: center;">2021</h2>
+      <div id = "contacts">
+      <div class = "caption" style = "margin-top: 0px"><a name = "contacts">Contacts</a></div>
+      <ul id = "contactsContainer">
+        <li class="contact" id="telephone">+375(44)5697071</li>  
+        <li class="contact" id="mail">dasha_semchenko@mail.ru</li> 
+        <li class="contact" id="git-hub"><img src="pngwing.com.png" alt="GitHub" width="40" style="vertical-align: bottom;"><a href="https://github.com/dasha-zayats" target=_blank >Me on GitHub</a></li>
+        <li class="contact" id="rs-school"><a href="https://rs.school/js/" target="_blank"><img src="rs_school_js.svg" alt="RS-School" width="150"></a></li>
+      </ul>  
+      <div class="text" style="text-align: center;">2021</div>
       </div>
     </footer>
 
