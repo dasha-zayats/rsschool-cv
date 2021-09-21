@@ -1,0 +1,237 @@
+@font-face {
+    font-family: 'Lobster'; 
+    src: url(lobster-webfont.ttf);
+}
+
+@font-face {
+    font-family: 'FontAwesome'; 
+    src: url(fontawesome-webfont.ttf);
+}
+
+body {
+	margin: 0px;
+	background: #708090;
+}
+
+.container {
+	width: 80vw;
+	margin: 20px auto 0px;
+	border-right: 10px solid #000000;
+	border-left: 30px solid #000000;
+	background-color: #AFEEEE;
+}
+
+header {
+	display: flex;
+	flex-flow: row nowrap;
+	justify-content: center;
+	background-color: #6adede;
+}
+
+#photo {
+	margin: 30px;
+	width: 300px;
+	flex:1 auto;
+	flex-basis: 1;
+	border-radius: 70%;
+	border: 3px solid #808080;
+	box-shadow: 0 0 7px #808080;
+	filter: contrast(110%);
+}
+
+#name {
+	top: 70px;
+	width: 50vw;
+	flex:2 auto;
+	flex-basis: 1;
+	align-self: center;
+	font-size: 30px;
+	font-family: 'FontAwesome';
+	text-shadow: 2.5px 2.5px 1px #708090;
+}
+
+#navigation { 
+	display: flex;
+	flex-flow: row nowrap;
+	border: 1px solid #000000;
+	box-shadow: 0 0 7px #000000;
+	background-color: #708090;
+	color: #000000;
+	font-family: 'FontAwesome';
+}
+
+.section {
+    flex:1 content;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: bold;
+    border-right: 2px solid #000000;
+    border-radius: 3px;
+}
+
+.section:hover {
+	background-color: #D3D3D3;
+}
+
+.section a {
+	color: black;
+	text-decoration: none;
+}
+
+.categorie {
+	padding: 20px 100px;
+	border-bottom:  3px solid #808080;
+	box-shadow: 0 0 7px #808080;
+}
+
+.caption{
+	width: 100%;
+	padding-bottom: 20px;
+	font-size: 40px;
+	text-align: center;
+	font-family: 'Lobster';
+}
+
+.text {
+	font-family: 'FontAwesome';
+    font-size: 35px;
+	text-align: center;
+	padding: 10px;
+}
+
+#skills {
+	display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}
+
+.block {
+	flex-flow: 1 auto;
+	width: 40%;
+	margin: 30px;
+	background-color: #FFFFFF;
+}
+
+.line {
+	height: 5px;
+	background-color: #708090;
+}
+
+code {
+	display: block;
+	margin: 20px auto;
+	padding: 20px;
+	text-align: left;
+	font-size: 23px;
+	background-color: #FFFFFF;
+}
+
+
+#contacts {
+	padding: 10px 0px 10px 0px;
+}
+
+#contactsContainer {
+	display: flex;
+	flex-flow: row nowrap;
+}
+.contact {
+	flex: 1 auto;
+	padding-bottom: 10px;
+	text-align: center;
+	font-size: 28px;
+}
+
+#telephone::before {
+	content: "\2706";
+	padding-right: 5px;
+}
+
+#mail::before {
+	content: "\2709";
+	padding-right: 5px;
+}
+
+footer {
+	background-color: #6adede;
+}
+
+ul {
+	list-style-type: none;
+	padding: 0px;
+}	
+
+@media screen and (max-width: 1300px) {
+#name {
+	padding-left: 0px;
+	font-size: 25px;
+}
+
+.block {
+	width: 100%;
+	margin: 10px;}
+
+.text {
+	font-size: 25px;
+}
+
+#contactsContainer {
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+
+.contact {
+	width: 45%;
+	align-self: baseline;
+} 
+}
+
+@media screen and (max-width: 950px) {
+.container {
+	width: 100vw;
+	margin: 0px;
+	border-width: 0px;
+	overflow: visible;
+}
+
+h1,h2 {
+	text-align: center;
+	padding: 0px;
+	margin: 5px;
+}	
+
+header {
+	flex-flow: column nowrap;
+}
+
+#photo {
+	margin: 5px;
+	align-self: center;
+}
+
+#name {
+	align-self: center;
+	width: 100vw;
+}
+
+.categorie {
+	padding: 20px 20px;
+}
+
+.contact {
+	width: 100%;
+} 
+}
+
+@media screen and (max-width: 800px) {
+
+
+#navigation { 
+	flex-flow: column nowrap;
+}
+
+.section {
+	padding: 0px 10px;
+	border: 1px solid #000000;
+}	
+}
